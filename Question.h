@@ -9,5 +9,36 @@
 #import <Foundation/Foundation.h>
 
 @interface Question : NSObject
+@property (nonatomic,strong) NSString* testName;
+
+@property (nonatomic) int questionNumber;
+
+@property (nonatomic,strong) NSString* questionText;
+
+@property (nonatomic) int questionType;//1 for input answer, 2 for multiple choice, 3 for checkbox
+
+@property (nonatomic) int numOfAnswers;
+
+@property (nonatomic,strong) NSString* strInputAnswer;
+
+@property (nonatomic,strong) NSString* strRightAnswer;
+
+@property (nonatomic,strong) NSArray* answers;
+
+
+
+
+
+
+
+
+
+
+
+-(void)initWithAnswers:(int)value;
+
+-(bool)isRight:(NSString*)value;
+
+
 
 @end

@@ -13,6 +13,8 @@
 
 @property (nonatomic) int questionNumber;
 
+@property (nonatomic, strong) UIImage* picRelated;
+
 @property (nonatomic,strong) NSString* questionText;
 
 @property (nonatomic) int questionType;//1 for input answer, 2 for multiple choice, 3 for checkbox

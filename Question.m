@@ -12,6 +12,8 @@
 
 @synthesize testName;
 
+@synthesize picRelated;
+
 @synthesize questionNumber;
 
 @synthesize questionText;
